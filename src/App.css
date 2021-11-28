@@ -1,0 +1,189 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: fixed;
+  font-family: sans-serif;
+  background: rgb(20, 20, 20);
+  scroll-behavior: none;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  margin-top: 50px;
+  min-width: max-content;
+  width: 80%;
+  height: 80%;
+  color: rgb(250, 250, 250);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header > h1 {
+  display: flex;
+  color: antiquewhite;
+  font-size: 42px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  min-width: max-content;
+}
+
+.cardApp {
+  display: flex;
+  align-items: end;
+  text-align: end;
+}
+
+.github__logo {
+  display: flex;
+  align-items: end;
+  margin-right: 10px;
+}
+.github__logo > svg {
+  height: 60px;
+  width: 60px;
+  color: rgb(114, 177, 250);
+}
+
+.header::after {
+  content: "🌠";
+  display: flex;
+}
+
+.dots {
+  margin-left: 10px;
+  display: flex;
+  align-items: end;
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 2px solid rgb(114, 177, 250);
+  background: rgba(138, 138, 138, 0.267);
+  padding: 10px;
+  /* margin-right: 5px; */
+  color: antiquewhite;
+}
+
+.form__input:focus {
+  outline: none;
+  border-left: 4px solid;
+  border-top: 4px solid orange;
+  border-bottom-width: 4px;
+}
+
+.form__submit {
+  padding: 6px 15px;
+  background: rgb(114, 177, 250);
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  border: none;
+}
+
+.form__submit:active {
+  background: palegreen;
+}
+
+.CardsBox {
+  height: 25em;
+  width: 100%;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  /* background-color: rgb(250, 250, 250); */
+  width: 10px;
+  color: whitesmoke;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 177, 250);
+}
+
+.CardsBox::after {
+  position: relative;
+  bottom: 4%;
+  margin-top: 15px;
+  content: "React Js ➡ project1";
+  padding: 8px;
+  display: flex;
+  font-size: 18px;
+  font-style: italic;
+  color: salmon;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardBoxDiv {
+  padding: 5px;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(114, 177, 250);
+  width: max-content;
+  height: max-content;
+  margin: 15px;
+  user-select: none;
+}
+
+.pic {
+  padding-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.name {
+  font-weight: 700;
+  margin: 5px 0px;
+  color: antiquewhite;
+}
+
+.company {
+  font-size: 14px;
+  text-align: left;
+  color: rgb(114, 177, 250);
+}
