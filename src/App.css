@@ -145,7 +145,7 @@ body {
   display: grid;
   justify-items: center;
   width: 100%;
-  height: 100%;
+  height: 95%;
   overflow-y: scroll;
   scroll-behavior: smooth;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

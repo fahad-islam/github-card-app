@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import data from "./data";
 import CardBox from "./CardBox";
@@ -8,8 +8,7 @@ function App() {
   const [profiles, setProfiles] = useState([...data]);
   const addNewProfile = (newProfile) => {
     setProfiles([...profiles, newProfile]);
-    console.warn("this is the main data pipe line");
-    console.log(profiles);
+    
   };
   return (
     <div className="App">
