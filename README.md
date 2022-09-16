@@ -1,3 +1,9 @@
+# Github Card Application
+
+## Analytics
+![Alt](https://repobeats.axiom.co/api/embed/44be678cf85070e8501842f282a4eff4b7d2506e.svg "Repobeats analytics image")
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
